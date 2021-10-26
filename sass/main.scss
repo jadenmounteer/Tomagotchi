@@ -1,0 +1,38 @@
+// Variables
+
+// Colors
+$outer-egg: #c59db0;
+$inner-egg: #d0be71;
+$button: #703a2a;
+$yellow-sprinkle: #ccb266;
+$white-sprinkle: #c9c9cb;
+$green-sprinkle: #186962;
+$red-sprinkle: #bb504c;
+$black: #010101;
+$screen-pink: #c8afa3;
+$screen-green: #9fc3ba;
+$crack-pink: #bd8a9e;
+
+// Layout variables
+$page-width: 100%;
+$inner-egg-width: 25em;
+$inner-egg-height: 25em;
+$button-radius: 30;
+$screen-width: $inner-egg-width - 5;
+$screen-height: $inner-egg-height - 5;
+$character-screen-width: $screen-width;
+$character-screen-height: $screen-height - 8;
+$character-screen-margin-top: $character-screen-height / 3;
+$sprinkle-width: 90px;
+$sprinkle-height: 20px;
+
+// Import the modularized Sass parials
+@import "layout/main-page";
+@import "layout/inner-egg.scss";
+@import "layout/header.scss";
+@import "layout/screen.scss";
+@import "layout/character-screen.scss";
+@import "elements/buttons.scss";
+@import "elements/sprinkles.scss";
+@import "characters/character.scss";
+

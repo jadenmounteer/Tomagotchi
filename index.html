@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomagotchi</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--<script src="js/main.js" type="module" defer></script>-->
+</head>
+<body>
+    <div id="content">
+    <div id="outer-egg">
+        
+       
+        <header>
+            <img id="logo" src="assets/Tamagotchi_Logo.png">
+        </header>
+        
+
+        <div id="inner-egg">
+            <div id="screen">
+                <svg id="character-screen">
+                    <!-- Define the background pattern -->
+                    <defs>
+                        <pattern id="character-screen-pattern"  width=".25" height=".25">
+                            <polygon class="pattern-element" points="0,10 350,210 170,250 123,250" />
+                        </pattern>
+                    </defs>
+
+                    <!-- Add the pattern to the backgroun -->
+                    <rect id="character-screen-background"></rect>
+                    <!-- The character will go here -->
+                    <!--
+                        <circle cx="50%" cy="70%" r="40" stroke="black" stroke-width="3" fill-opacity="0%"/>
+
+                    -->
+                </svg>
+                
+                <img id="character-gif" src="assets/egg.gif" width="130"> 
+                
+                
+            </div>
+                
+            
+        </div>
+
+
+
+        <footer>
+            <div id="buttons">
+                <svg id="buttons-container">
+                    <circle class="svg-button-shadow" id="button-shadow-1"/>
+                    <circle class="svg-button" id="button-1"/>
+                    <circle class="svg-button-shadow" id="button-shadow-2"/>
+                    <circle class="svg-button" id="button-2"/>
+                    <circle class="svg-button-shadow" id="button-shadow-3"/>
+                    <circle class="svg-button" id="button-3"/>
+                </svg>
+            </div>
+        </footer>
+
+        <!-- Sprinkles -->
+        <!--
+            <svg class="sprinkles-container" transform="translate(200 -1000) rotate(30)">
+            <rect class="sprinkle red-sprinkle"/>
+        </svg>
+        <svg class="sprinkles-container" transform="translate(250 -500) rotate(160)">
+            <rect class="sprinkle yellow-sprinkle"/>
+        </svg>
+
+        -->
+        
+
+    </div>
+</div>
+</body>
+</html>

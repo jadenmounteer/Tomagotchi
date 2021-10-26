@@ -1,0 +1,24 @@
+#character-screen {
+    //border-style: solid;
+    height: $character-screen-height;
+    width: $character-screen-width;
+    display: block;
+    margin-top: $character-screen-margin-top;
+    background-color: $screen-green;
+}
+
+#character-screen-pattern {
+}
+
+#character-screen-background {
+    height: $character-screen-height;
+    width: $character-screen-width;
+    display: block;
+    margin-top: 160px;
+    fill: url(#character-screen-pattern);
+}
+
+.pattern-element {
+    fill: $screen-pink;
+}
+

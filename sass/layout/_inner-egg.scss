@@ -1,0 +1,14 @@
+#inner-egg {
+    background-color: $inner-egg;
+    width: $inner-egg-width;
+    height: $inner-egg-height;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    
+}

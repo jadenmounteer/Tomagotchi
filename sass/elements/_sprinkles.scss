@@ -1,0 +1,30 @@
+.sprinkles-container {
+    width: $sprinkle-width;
+    height: $sprinkle-height;
+    //border-style: solid;
+}
+
+.sprinkle {
+    x:0px;
+    y:0px; 
+    rx:10px; 
+    ry:20px; 
+    width: $sprinkle-width;
+    height: $sprinkle-height;
+    
+} 
+
+.red-sprinkle {
+    fill: $red-sprinkle;
+}
+
+.yellow-sprinkle {
+    fill: $yellow-sprinkle;
+}
+
+.white-sprinkle {
+    fill: $white-sprinkle;
+}
+.green-sprinkle {
+    fill: $green-sprinkle;
+}

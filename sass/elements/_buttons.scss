@@ -1,0 +1,54 @@
+#buttons-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: 50px;
+    height: 180px;
+    width: $inner-egg-width - 5;
+    //border-style: solid;
+}
+
+.svg-button {
+    fill: $button;
+    cursor: pointer;
+}
+
+#button-1 {
+    cx: 15%;
+    cy: 70px;
+    r: $button-radius;
+}
+
+#button-2 {
+    cx: 50%;
+    cy: 120px;
+    r: $button-radius;
+}
+
+#button-3 {
+    cx: 85%;
+    cy: 70px;
+    r: $button-radius;
+}
+
+.svg-button-shadow {
+    fill: $black;
+}
+
+#button-shadow-1 {
+    cx: 14.9%;
+    cy: 63px;
+    r: $button-radius + 5;
+}
+
+#button-shadow-2 {
+    cx: 49.9%;
+    cy: 113px;
+    r: $button-radius + 5;
+}
+
+#button-shadow-3 {
+    cx: 85.5%;
+    cy: 63px;
+    r: $button-radius + 5;
+}

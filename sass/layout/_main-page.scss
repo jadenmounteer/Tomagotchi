@@ -1,0 +1,19 @@
+/* Get rid of the margin */ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the html */
+html {
+    background-color: $outer-egg;
+}
+
+/* Center the content of the page */
+.content {
+    max-width: $page-width;
+    margin: auto;
+}
+
+
+
