@@ -15,6 +15,15 @@ let tomagotchi = new CharacterController();
 // Initialize the character
 tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
 
+// Set a temporary onclick listener on the middle button to reset the Tomagotchi
+document.getElementById("button-2").addEventListener("click", () => {
+    // Clear localStorage
+    localStorage.clear();
+    // Initialize the character
+    tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
+    alert("You have reset your Tomagotchi");
+
+});
 
 
 
