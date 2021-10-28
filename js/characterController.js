@@ -57,7 +57,7 @@ class CharacterController {
         // Calculate the total milliseconds to next animation
         let totalMillisecondsToNextAnimation = millisecondsToNextAnimation + animationDuration;
         // Play the first animation
-        setTimeout(() => {this.showCharacter(firstAnimationCharacter, firstAnimationAction)}, 300000); // 300000 is 5 minutes. You multiply the muliseconds by 60000 to get a minute.
+        setTimeout(() => {this.showCharacter(firstAnimationCharacter, firstAnimationAction)}, animationDuration); // 300000 is 5 minutes. You multiply the muliseconds by 60000 to get a minute.
         // Play the second animation
         setTimeout(() => {
             // Show the character
