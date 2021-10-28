@@ -20,18 +20,20 @@ tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
 document.getElementById("button-2").addEventListener("click", () => {
     // Clear localStorage
     localStorage.clear();
-    // Initialize the character
-    tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
     alert("You have reset your Tomagotchi");
+    // reload the document
+    location.reload();
+
+    
 
 });
 // Mobile
 document.getElementById("button-2").addEventListener("click", () => {
     // Clear localStorage
     localStorage.clear();
-    // Initialize the character
-    tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
     alert("You have reset your Tomagotchi");
+    // reload the document
+    location.reload();
 
 });
 
