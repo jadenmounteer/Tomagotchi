@@ -77,7 +77,7 @@ class CharacterModel {
         
         // if it is null, set it to "default"
         if (currentAction == null) {
-            currentAction = "hatching";
+            currentAction = "default";
         }
 
         // Return the name

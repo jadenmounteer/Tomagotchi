@@ -36,7 +36,7 @@ class CharacterController {
      */
     animate() {
         // Call the set Animation method to make the character hatch out of the egg
-        this.setAnimation(this.currentCharacterName, this.currentCharacterAction, "Baby-Tchi", "default", 300000, 10000);
+        this.setAnimation(this.currentCharacterName, "hatching", "Baby-Tchi", "default", 300000, 10000);
     }
 
     /**
