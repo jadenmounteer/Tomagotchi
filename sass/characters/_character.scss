@@ -1,6 +1,12 @@
+#character-div {
+    position: relative;
+    //border-style: solid;
+    top: -60%;
+    height: $character-screen-height;
+    width: $character-screen-width;
+}
+
 #character-gif {
-    position: absolute;
-    top: 35%;
-    left: 37%;
-    //TODO: I'll have to place some media queries to position the gif as the screen size changes
+    margin-top: 7%;
+    margin-left: 20%;
 }

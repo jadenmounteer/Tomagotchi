@@ -1,0 +1,34 @@
+
+// Media queries for width
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+
+  // Media queries for height
+  @mixin shortest {
+    @media (max-height: 284px) { @content; }
+  }
+  @mixin short {
+    @media (min-height: 568px) { @content; }
+  }
+  @mixin medium-height {
+    @media (min-height: 852px) { @content; }
+  }
+  @mixin tall {
+    @media (min-height: 1136px) { @content; }
+  }
+  @mixin tallest {
+    @media (min-height: 1420px) { @content; }
+  }
