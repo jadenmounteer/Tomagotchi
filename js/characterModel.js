@@ -1,3 +1,5 @@
+import {readFromLS, readSingleStringFromLS} from "./localStorage.js";
+
 // A list to hold all of the characters objects
 let listOfCharacters = [
     {
@@ -24,13 +26,7 @@ class CharacterModel {
      */
     getCharacterAnimation(characterName, action) {
         // Get the current character
-        let currentCharacter = "";
-        for (let i=0; i<listOfCharacters.length; i++) {
-            if (listOfCharacters[i].name == characterName) {
-                currentCharacter = listOfCharacters[i];
-                break;
-            }
-        }
+        let currentCharacter = this.getCurrentCharacter(characterName);
 
         console.log(`The gif for the current character is ${currentCharacter.defaulfGifSrc}`);
 
@@ -47,6 +43,54 @@ class CharacterModel {
         // Return the current animation
         return currentAnimation;
 
+    }
+
+    /** 
+     * Returns the current character
+     */
+     getCurrentCharacter(characterName) {
+        // Get the current character
+        for (let i=0; i<listOfCharacters.length; i++) {
+            if (listOfCharacters[i].name == characterName) {
+                return listOfCharacters[i];
+            }
+        }
+    }
+
+    getCurrentCharacterName() {
+        // Grab it from local storage
+        let currentName = readSingleStringFromLS("characterName");
+        
+        // if it is null, set it to "Egg"
+        if (currentName == null) {
+            currentName = "Egg";
+        }
+
+        // Return the name
+        return currentName;
+
+    }
+
+    getCurrentCharacterAction() {
+        // Grab it from local storage
+        let currentAction = readSingleStringFromLS("characterAction");
+        
+        // if it is null, set it to "default"
+        if (currentAction == null) {
+            currentAction = "default";
+        }
+
+        // Return the name
+        return currentAction;
+
+    }
+
+    /**
+     * Returns the time to evolve depending on the character
+     */
+    getCurrentCharacterTimeToEvolve() {
+        let currentCharacter = this.getCurrentCharacter();
+        return currentCharacter.minutesToEvolve * 60000;
     }
 
 }

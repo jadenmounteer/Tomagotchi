@@ -1,18 +1,20 @@
 // Import the CharacterController
 import CharacterController from "./characterController.js";
+import {getTimeDifferenceFromLastLoad} from "./timeKeeping.js";
+import {writeToLS} from "./localStorage.js";
+
+// Get the last time the user logged in from local storage
+let millisecondsSinceLastLogin = getTimeDifferenceFromLastLoad();
+
+// Write the current time to local storage
+writeToLS("loginTime", Date.now());
 
 // Create an instance of the character controller
 let tomagotchi = new CharacterController();
 
-// Show the tomagotchi
-tomagotchi.showCharacter("Egg", "default");
+// Initialize the character
+tomagotchi.initializeCharacter(millisecondsSinceLastLogin);
 
-// Cause the egg to hatch
-setTimeout(() => {tomagotchi.showCharacter("Egg", "hatching")}, 300000); // 300000 is 5 minutes. You multiply the muliseconds by 60000 to get a minute.
- 
-
-// Change to the default baby tchi animation
-setTimeout(() => {tomagotchi.showCharacter("Baby-Tchi", "default")}, 310000); // Needs to be 10000 ms after the hatching animation starts. 310000 is five minutes after.
 
 
 
